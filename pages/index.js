@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client"
-import { useMoralisQuery, useMoralis } from "react-moralis"
+import { useMoralis } from "react-moralis"
 import NFTBox from "../components/NFTBox"
 import GET_ACTIVE_ITEMS from "../constants/subgraphQueries"
 import networkMapping from "../constants/networkMapping.json"

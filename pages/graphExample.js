@@ -1,4 +1,4 @@
-import { gql } from "@apollo/client"
+import { useQuery, gql } from "@apollo/client"
 
 const GET_ACTIVE_ITEMS = gql`
     {
@@ -13,4 +13,8 @@ const GET_ACTIVE_ITEMS = gql`
     }
 `
 
-export default GET_ACTIVE_ITEMS
+export default function GraphExample() {
+    const { loading, error, data } = useQuery(GET_ACTIVE_ITEMS)
+    console.log(data)
+    return <div>Hi</div>
+}
